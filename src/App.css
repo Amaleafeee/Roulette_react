@@ -1,38 +1,47 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #44008b;
+}
+
+.login-form, .register-form {
+  font-family: "Sans-serif", Times, serif;
+  background-image: linear-gradient(80deg, #00076f, #44008b, #9f45b0, #e54ed0);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.link-button{
+  background: none;
+  color: #e54ed0;
+  text-decoration: underline;
+}
+
+label{
+  text-align: center;
+  padding: 0.25rem 0;
+}
+
+input{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+
+button{
+  font-family: "Sans-serif", Times, serif;
+  font-weight: 900;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  background-color: #e54ed0;
+  text-decoration: solid;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
 }
